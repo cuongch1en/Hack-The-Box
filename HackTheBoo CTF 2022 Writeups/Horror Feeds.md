@@ -33,7 +33,7 @@
 
 8. The passwd changed, let's login and get flag !!!
 
-![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/b2ce90fd-4a18-47c6-965c-2efeab596018)
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/41b78b1b-9a0b-4676-aef1-cb6fdd0357be)
 
 
 
