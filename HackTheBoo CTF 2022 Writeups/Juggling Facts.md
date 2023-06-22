@@ -46,11 +46,10 @@ A snippet in `IndexController.php`
 ```
 3. We try ` { "type":"secrets" }`:
 
-image
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/e620a032-f450-48c6-994c-e5c97c275b3c)
+
 
 4. How the above snippet works? : checks input, compares `type` parameter and `if` type === secrets && REMOTE_ADDR !== 127.0.0.1 return a message:
-
-image
 
 `else` return `switch case` (it is the vulnerability)
 
@@ -58,10 +57,12 @@ image
 
 5. It is a loose comparison, [document about it](https://www.php.net/manual/en/types.comparisons.php).
 
-image
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/f8afa4a9-233c-4c29-9947-2efa9188308e)
+
 
 We can understand `True` == `any string` retrurn `true`.
 
 6. Final payload `{"type":True}`
 
-image
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/8c746e90-fdcb-42bf-ad54-5a1c9b6e8b04)
+
