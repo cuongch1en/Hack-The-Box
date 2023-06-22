@@ -11,7 +11,8 @@
 
 **Ideal**: create an exception error 
 
-![Alt text](image-1.png)
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/77b525a8-95b6-4be9-91b9-3a63800d9d6c)
+
 
 4. We have the hashed passwd from error and
 `    query_db(f'INSERT INTO users (username, password) VALUES ("{username}", "{hashed}")')
@@ -21,16 +22,19 @@
 
 5. I try `UPDATE SET` to change passwd but:
 
-![Alt text](image-2.png)
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/75915ece-a6de-4bff-a817-5d391545725e)
+
 
 6. Then i search ` update combine with insert in mysql ` i find the ideal use `INSERT ... ON DUPLICATE KEY UPDATE`
 7. Let's try it: 
 
-![Alt text](image-3.png)
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/57cb599d-b204-419f-9236-fe544b96c2e3)
+
 
 8. The passwd changed, let's login and get flag !!!
 
-![Alt text](Screenshot_2023-06-22_06-16-25.png)
+![image](https://github.com/0jamaKig86/Hack-The-Box.ojmk/assets/95555712/b2ce90fd-4a18-47c6-965c-2efeab596018)
+
 
 
 
