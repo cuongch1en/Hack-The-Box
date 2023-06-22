@@ -16,7 +16,7 @@
 
 
 6. We search `Mako template injection payload` and try [some payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#mako).
-7. Final payload!!!
+7. Final payload!!! --- i don't know why .os.system() don't run @@@, so i try .os.popen() ---
 
 ` ${self.__init__.__globals__['util'].os.popen('cd / && cat flag.txt').read()} `
 
